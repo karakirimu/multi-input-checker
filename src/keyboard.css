@@ -1,0 +1,79 @@
+.layout {
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+}
+
+.keyboard {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.row {
+    display: flex;
+    height: 48px;
+    gap: 5px;
+}
+
+.row.space-31px { width: 31px; }
+.row.space-40px { width: 40px; }
+.row.space-48px { width: 48px; }
+
+.key {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    transition: border-color 0.25s;
+}
+
+.key.width-50px  { width: 50px; }
+.key.width-60px  { width: 60px; }
+.key.width-70px  { width: 70px; }
+.key.width-80px  { width: 80px; }
+.key.width-90px  { width: 90px; }
+.key.width-104px { width: 104px; }
+.key.width-116px { width: 116px; }
+.key.width-120px { width: 120px; }
+.key.width-130px { width: 130px; }
+.key.width-140px { width: 140px; }
+.key.width-150px { width: 150px; }
+.key.height-101px { height: 101px; }
+
+.key.enter {
+    width: 80px;
+    border-bottom-right-radius: 0px;
+}
+
+.key.enter2 {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    margin-left: 20px;
+    width: 60px;
+    height: 53px;
+}
+
+.key.default {
+    background-color: #e0e0e0;
+}
+
+.key.disabled {
+    background-color: #3c3c3c;
+    color: #8a8a8a;
+}
+
+.key.pressed {
+    background-color: #6567a0;
+}
+
+.key.released {
+    background-color: #353653;
+}
